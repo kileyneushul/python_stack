@@ -1,0 +1,44 @@
+pip install: I was able to install from the Python Package Index using a requirement specifier. Generally speaking, a requirement specifer is composed of a project name followed by an optional version specifier. For the course project I installed a specific version of Django using this command python -m pip install "Django==1.11.9"
+
+pip list: This command showed me the contents that I had downloaded from my python host to my py3Env Virtual Environment
+
+Package    Version
+---------- -------
+Django     1.11.9 
+pip        19.2.3 
+pytz       2021.1 
+setuptools 41.2.0 
+
+deactivate: This command deactivated my virtual machine. I returned to my previous machine. 
+
+pip3 list: This command differed from my virtual environment list because on my actual computer I did not download the "django 1.11.9" package. This package only exists within the virtual environment. **If I want to see the packages downloaded onto my machine outside of my virtual environment, I must use the command "pip3 list". 
+
+Package    Version
+---------- -------
+pip        19.2.3 
+setuptools 41.2.0 
+six        1.15.0 
+wheel      0.33.1 
+
+source py3Env/bin/activate: This command reactivates my virtual machine environment. 
+
+pip install Django==1.11.9 (for the second time): I received two "ERROR" messages: 
+
+ERROR: Could not find a version that satisfies the requirement 1.11.9 (from versions: none)
+ERROR: No matching distribution found for 1.11.9
+
+pip freeze: This command showed this output: 
+Django==1.11.9
+pytz==2021.1
+
+According to Stackoverflow.com, "pip list shows ALL installed packages. And, pip freeze shows packages YOU installed via pip (or pipenv if using that tool) command in a requirements format."
+
+pip freeze > requirements.txt: When I ls into that file, pip freeze > requirements.txt, I see all of the contents on my Desktop and an added requirements.txt file. I am assuming that pip freeze > command adds in whatever comes after the ">". 
+
+pip uninstall Django: This command uninstalled Django, after confirming with me that I wanted to uninstall Django. 
+
+pip show Django: This command shows me nothing... after uninstalling Django. 
+
+
+
+
