@@ -1,0 +1,22 @@
+Practice using pip in virtual environment:
+
+1. pip install Django==1.11.9 -- This command installed the packages pytz, Django into my virtual machine py3Env
+
+2. pip list -- This command showed me a list of the packages and versions installed into my virtual machine py3Env
+
+3. deactivate -- This command shutdown my virtual machine and (from what i can see on the terminal) brought me back to my machine's environment
+
+4. pip3 list -- When I exit out of the virtual environment and switch over to my machine environment, I run the pip3 list command and I do not see the Django package installed. When I switch back to the virtual environment and run the pip list command, I can see the Django Package installed. 
+
+5. source my_environments/py3Env/bin/activate -- When I input this command, I re-enter into the virtual environment.
+
+6. pip install Django==1.11.9 (2nd Attempt) -- When I re-insert this command, I receive this message:  Requirement already satisfied: Django==1.11.9 in ./py3Env/lib/python3.9/site-packages (1.11.9)
+Requirement already satisfied: pytz in ./py3Env/lib/python3.9/site-packages (from Django==1.11.9) (2021.1)
+
+7. Difference between pip freeze -- will show the packages that I install via pip, not ALL of the packages installed, just the ones that I install.
+
+8. pip freeze > requirements.txt -- This command created a requirements.txt file and printed all of the downloaded pips into the txt file. My txt file for my virtual environment py3Env contained: Django==1.11.9 and pytz==2021.1
+
+9. pip uninstall Django -- This uninstalls Django from the virtual environment
+
+10. pip show Django -- This shows a complete summary of the Django package including description, homepge, location,licesne, author-email, author, versin and name.
