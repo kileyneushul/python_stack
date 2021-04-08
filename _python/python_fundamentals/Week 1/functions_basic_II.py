@@ -33,18 +33,19 @@ def values_greater_than_second(num_list):
     #second value variable
     second_value = num_list[1]
 
+    if len(num_list) < 3:
+        return False
+
     for val in range(len(num_list)):
         if num_list[val] > second_value:
             new_list.append(num_list[val])
     print(len(new_list))
     return new_list
 
-    if len(num_list) < 3:
-        return False
-
 print(values_greater_than_second([1,2,3,4,5,6,7]))
 print(values_greater_than_second([90,32,12,87,34,2]))
 print(values_greater_than_second([6,9]))
+print(values_greater_than_second([0,1]))
 
 #5 This Length That Value
 
@@ -57,6 +58,7 @@ def sizeAndValue(size, value):
 print(sizeAndValue(10,3))
 print(sizeAndValue(90,5))
 print(sizeAndValue(1,4))
+print(sizeAndValue(1,3))
 
 
 
