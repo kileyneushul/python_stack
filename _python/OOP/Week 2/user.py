@@ -4,7 +4,6 @@ class User:
         self.name = user_name
         self.email = email_address
         self.accountBalance = 0
-        self.other_user_account_balance = 0
     
     #methods defined here
     def accountDeposit(self, amount): 
