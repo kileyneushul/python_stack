@@ -28,6 +28,9 @@ class BankAccount:
     
     def second_account_withdrawl(self, amount2):
         self.balance2 -= amount2
+        if self.balance < 0:
+            print("Insufficient funds: Charging a $5 fee")
+            self.balance -= 5
         return self
     
     def second_account_info(self):
@@ -92,11 +95,22 @@ print(gaby.email)
 print(gaby.name)
 
 kiley.accountDeposit(100).make_withdrawl(50)
-kiley.accountDeposit2(500).make_withdrawl(10)
+kiley.accountDeposit2(400000).accountWithdrawl2(300).accountWithdrawl2(6548)
 
 
-print(kiley.display_user_balance)
-print(kiley.display_user_balance_second)
+kiley.display_user_balance()
+kiley.display_user_balance_second()
+
+
+# gaby.accountDeposit(500).make_withdrawl(10)
+# gaby.accountDeposit2(93211).accountdeposit2(90234).accountWithdrawl2(54344)
+
+# kiley.display_user_balance()
+# gaby.display_user_balance()
+
+# kiley.display_user_balance_second()
+# gaby.display_user_balance_second()
+
 
 
 
